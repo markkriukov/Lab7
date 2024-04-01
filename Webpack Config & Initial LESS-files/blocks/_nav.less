@@ -1,0 +1,43 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #F67C62;
+
+    &__items {
+        display: flex;
+        list-style: none;
+        justify-content: start;
+    }
+
+    &__item {
+        text-align: center;
+        list-style: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+        
+        &:first-child {
+            border-left: none;
+        }
+
+        a {
+            padding: 1rem 2rem;
+            display: block;
+            color: #F6AC9C;
+            text-decoration: none;
+
+            &.active,
+            &:hover {
+                font-weight: bold;
+                color: #E63B17;
+            }
+        }
+    }
+
+    &__toggle {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+
+    }
+}

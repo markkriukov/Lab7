@@ -1,0 +1,22 @@
+.table {
+    border-collapse: collapse;
+    border: 2px solid grey;
+    width: 77vi; // Ви мабуть мали на увазі 77vw
+    text-align: left;
+
+    &__th {
+        border: 1px solid grey;
+        background-color: #dddddd;
+        width: 16%;
+        height: 3ch;
+    }
+
+    &__td {
+        border: 1px solid grey;
+        height: 10ch;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+}
