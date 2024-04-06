@@ -1,0 +1,19 @@
+@media print {
+    .header,
+    .footer {
+        display: none;
+    }
+
+    .body {
+        background: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    a:after {
+        content: " (" attr(href) ")";
+    }
+
+    @page {
+        margin: 50px;
+    }
+}
